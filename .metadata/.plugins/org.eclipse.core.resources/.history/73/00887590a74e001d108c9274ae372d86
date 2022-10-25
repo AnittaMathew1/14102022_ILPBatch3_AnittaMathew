@@ -1,0 +1,15 @@
+package com.experion.entity;
+
+public class Product {
+	
+	String productCode;
+	String productName;
+	public Product(String productCode, String productName) {
+		
+		this.productCode = productCode;
+		this.productName = productName;
+	}
+	
+	
+
+}

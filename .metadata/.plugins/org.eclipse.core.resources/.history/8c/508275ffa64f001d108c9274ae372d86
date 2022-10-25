@@ -1,0 +1,21 @@
+package com.experion.utility;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import com.experion.entity.Account;
+import com.experion.entity.Product;
+import com.experion.service.AccountService;
+
+public class ProductUtility {
+
+	public static void main(String[] arg)
+	{
+		Account account=new Account("WOMENS SAVING NUMBER","ACC100023",10000);
+		AccountService accountService= new AccountService();
+		accountService.depositCash(account,1000);
+		accountService.depositCash(account,1000,"ANITTA@YBL");
+		accountService.depositCash(account,"CHQ19987",1000);
+	}
+}
+

@@ -1,0 +1,43 @@
+package com.ilpexperion.GroupAssignment;
+
+import java.util.Scanner;
+
+public class SumofSeries6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		int number;
+		double power;
+		double factorial;
+		double denomenatorSum;
+		double totalSum;
+		double sum1=0;
+		double sum=0;
+		System.out.println("Enter the value of n");
+		number=scanner.nextInt();
+		for(double integer=1;integer<=number;integer++)
+		{
+			power=1;
+			for(int integer1=1;integer1<=integer;integer1++)
+			{
+				power=power*integer;
+				//System.out.println("power="+power);
+			}
+			factorial=1;
+			for(int integer1=1;integer1<=integer;integer1++)
+			{
+				factorial=factorial*integer1;
+				//System.out.println("factorial="+factorial);
+			}
+			//System.out.println("power="+power);
+			//System.out.println("factorial="+factorial);
+			sum1=power+factorial;
+			//System.out.println("Sum1="+sum1);
+			sum=sum+((double)integer/(double)sum1);
+			System.out.println("SUM="+sum);
+		}
+
+	}
+
+}

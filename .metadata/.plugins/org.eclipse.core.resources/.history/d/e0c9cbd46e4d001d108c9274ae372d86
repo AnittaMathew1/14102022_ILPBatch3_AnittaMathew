@@ -1,0 +1,40 @@
+package com.ilpexperion.GroupAssignment;
+
+import java.util.Scanner;
+
+public class SumofSeries1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		int count;
+		int sum=0;
+		//int temp;
+		int flag=0;
+		System.out.println("Enter Value of n");
+		count=scanner.nextInt();
+		/*for(int intiger=1;intiger<count;intiger+=4)
+		{
+			System.out.println("Sum= "+sum);
+			System.out.println("inter= "+intiger);
+
+			temp=intiger-(intiger+2);
+			sum=sum+temp;
+		}*/
+		for(int integer = 1; integer<=count; integer+=2 ) 
+		{
+			flag=flag+1;
+			if((flag%2)==0)
+			{
+				sum=sum-integer;
+			}
+			else
+			{
+				sum=sum+integer;
+			}
+		}
+		System.out.println("Sum= "+sum);
+
+	}
+
+}

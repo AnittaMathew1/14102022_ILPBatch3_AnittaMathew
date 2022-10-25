@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.ilpexperion.GroupAssignment.SumofSeries&apos; to &apos;SumofSeries5&apos;&#x0D;&#x0A;- Original project: &apos;17102022_ILP_GroupAssignment&apos;&#x0D;&#x0A;- Original element: &apos;com.ilpexperion.GroupAssignment.SumofSeries&apos;&#x0D;&#x0A;- Renamed element: &apos;com.ilpexperion.GroupAssignment.SumofSeries5&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SumofSeries&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.ilpexperion.GroupAssignment{SumofSeries.java[SumofSeries" matchStrategy="1" name="SumofSeries5" qualified="false" references="true" similarDeclarations="false" stamp="1666032136384" textual="false" version="1.0"/>
+</session>

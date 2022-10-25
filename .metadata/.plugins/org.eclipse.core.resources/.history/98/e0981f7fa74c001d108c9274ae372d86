@@ -1,0 +1,23 @@
+package com.ilpexperion.BasicPrograming;
+
+import java.util.Scanner;
+
+public class Assignment1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		char input1;
+		System.out.println("Enter the Alphabet");
+		input1=scanner.nextLine();
+		if((input1='a')||(input1='e')||(input1='i')||(input1='o')||(input1='u'))
+			{
+			System.out.println("Input is a vowel");
+		else
+			{
+			System.out.println("Input is not a vowel");
+			}
+
+	}
+
+}

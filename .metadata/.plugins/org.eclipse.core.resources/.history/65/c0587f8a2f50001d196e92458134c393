@@ -1,0 +1,7 @@
+package com.experion.entity;
+
+public interface LoanService {
+
+	public abstract void approveLoan();
+	public void checkDueDte();
+}

@@ -1,0 +1,15 @@
+package com.experion.entity;
+
+public interface AccountCardServices {
+
+	@Override
+	public void checkBalance() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void cashWithdrawal() {
+		// TODO Auto-generated method stub
+		
+	}
+}

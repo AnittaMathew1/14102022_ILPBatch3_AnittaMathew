@@ -1,0 +1,40 @@
+package com.experion.utility;
+
+import java.util.Scanner;
+
+import com.experion.entity.Product;
+	public class Productutility {
+
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			Scanner scanner = new Scanner(System.in);
+			Product product=new Product();
+			
+			//Product1
+			System.out.println("Enter the Product Code =");
+			String productCode=scanner.nextLine();
+			product.setProductCode(productCode);
+			System.out.println("Product Code ="+ product.getProductCode());
+			//ProductName
+			//Product product=new Product();
+			System.out.println("Enter the Product Name =");
+			String productName=scanner.nextLine();
+			product.setProductName(productName);
+			System.out.println("Second Product Name ="+ product.getProductCode());
+			
+			
+			//Product2
+			Product productTwo=new Product();
+			System.out.println("Enter the second Product Code =");
+			productCode=scanner.nextLine();
+			productTwo.setProductCode(productCode);
+			System.out.println("Product Code ="+ productTwo.getProductCode());
+			//productName
+			//Product productTwo=new Product();
+			System.out.println("Enter the second Product Name =");
+			productName=scanner.nextLine();
+			productTwo.setProductName(productName);
+			System.out.println("Second Product Name ="+ productTwo.getProductName());
+		}
+
+}

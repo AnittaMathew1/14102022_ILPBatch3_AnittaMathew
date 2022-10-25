@@ -1,0 +1,32 @@
+package com.ilpexperion.GroupAssignment;
+
+import java.util.Scanner;
+
+public class SumofSeries3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		int count;
+		int temporary=1;
+		int substraction[];
+		substraction= new int[10];
+		//int sum;
+		int flag=0;
+		System.out.println("Enter Value of n");
+		count=scanner.nextInt();
+		for(int integer=1;integer<=count;integer+=2)
+		{
+			flag=flag+1;
+			for(int integer1=1;integer1<flag;integer1++)
+			{
+				temporary=temporary*integer;
+				substraction[integer1]=temporary;
+				System.out.println("values"+substraction[integer]);
+			}
+			
+		}
+
+	}
+
+}

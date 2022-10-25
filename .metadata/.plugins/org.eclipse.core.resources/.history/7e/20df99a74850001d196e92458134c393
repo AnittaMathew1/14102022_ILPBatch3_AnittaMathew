@@ -1,0 +1,147 @@
+package com.experion.utility;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import com.experion.entity.Product;
+import com.experion.service.ProductServices;
+//import com.experion.service.Service;
+
+public class ProductUtility {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int userChoice;
+		int choice;
+		int subChoice;
+		int i=0;
+		char mainChoice;
+		char c;
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("**********SUPER MARKET**********");
+		ArrayList<Product>productList=new ArrayList<Product>();
+		//do 
+			//{
+			System.out.println("1.Management\n2.Customer");
+			userChoice=scanner.nextInt();
+				if((i<=0)&&(userChoice==2))
+					{
+					System.out.println("No Stock Available");
+					}
+				else
+				{
+					switch(userChoice) 
+						{
+						case 1:	do
+							{		
+							System.out.println("MENU\n 1.Electronics\n 2.Fabrics");
+							System.out.println("Enter Choice =");
+							subChoice=scanner.nextInt();
+								switch(subChoice) 
+									{
+									case 1:
+									System.out.println("MENU\n 1.Add Stock\n 2.Display Stock");
+									System.out.println("Enter Choice =");
+									choice=scanner.nextInt();
+										switch(choice)
+											{
+											case 1:
+												productList.add(ProductServices.createProduct());
+												i++;
+												break;
+											case 2:
+												if(i<=0)
+										
+													System.out.println("No products Available");
+				
+												else
+											
+													ProductServices.displayProductDetails(productList);
+										
+												break;
+											}
+								/*case 2:
+									System.out.println("MENU\n 1.Add Product\n 2.Display Stock");
+									System.out.println("Enter Choice =");
+									choice=scanner.nextInt();
+									switch(choice)
+									{
+									case 1:
+										productList.add(Productservices.createProduct());
+										i++;
+										break;
+										case 2:
+											if(i<=0)
+											
+												System.out.println("No products Available");
+					
+											else
+												
+											Productservice.displayProductDetails(productList);
+											
+											break;
+										}*/
+							}
+							/*System.out.println("Do you want to continue? yes/no");
+							c=scanner.next().charAt(0);	
+							}while(c=='y');
+							break;*/
+									//}
+					case 2:	do
+						switch(subChoice) 
+						{
+							case 1:
+								System.out.println("MENU\n 1.Display Product\n 2.Buy Product\n 3.Existing Product Service");
+								System.out.println("Enter Choice =");
+								choice=scanner.nextInt();
+								switch(choice)
+								{
+								case 1:
+									ProductServices.displayProductDetails(productList);
+								//i++;
+								break;
+								case 2:
+									if(i<=0)
+									
+										System.out.println("No products Available");
+			
+									else
+										
+									ProductServices.displayProductDetails(productList);
+									
+									break;
+								}
+							case 2:
+								System.out.println("MENU\n 1.Add Product\n 2.Display Stock");
+								System.out.println("Enter Choice =");
+								choice=scanner.nextInt();
+								switch(choice)
+								{
+								case 1:
+									productList.add(ProductServices.createProduct());
+									i++;
+									break;
+									case 2:
+										if(i<=0)
+										
+											System.out.println("No products Available");
+				
+										else
+											
+										ProductServices.displayProductDetails(productList);
+										
+										break;
+									}
+							//	System.out.println("Do you want to continue? yes/no");
+								//c=scanner.next().charAt(0);	
+							//}while(c=='y');
+							break;
+									//System.out.println("Do you want to continue? yes/no");
+									//c=scanner.next().charAt(0);	
+								//}while(c=='y');
+								//break;
+					//}
+			//System.out.println("Continue with Main Menu? yes/no");
+			//	mainChoice=scanner.next().charAt(0);
+		//}while(mainChoice=='y');
+}

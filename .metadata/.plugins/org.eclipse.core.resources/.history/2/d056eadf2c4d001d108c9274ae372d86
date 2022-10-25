@@ -1,0 +1,47 @@
+package com.ilpexperion.GroupAssignment;
+
+import java.util.Scanner;
+
+public class SumofSeries2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		int count;
+		int sum=1;
+		int fib[];
+		fib=new int[10];
+		//int fibbinocci=1;
+		int cube;
+		fib[0]=0;
+		fib[1]=1;
+		System.out.println("Enter Value of n");
+		count=scanner.nextInt();
+		System.out.println("fibbi=\n"+fib[0]+"\n"+fib[1]);
+		/*for(int intiger=1;intiger<=count;intiger+=fibbinocci)
+		{
+			
+			System.out.println("fibbi= "+fibbinocci);
+			fib[1]=intiger;
+			cube=intiger*intiger*intiger;
+			sum=sum+cube;
+			//fibbinocci=0;
+			fibbinocci=fib[0]+fib[1];
+			fib[0]=intiger;
+			fib[1]=fibbinocci;
+		}*/
+		for(int i=1;i<count;i=fib[1])
+		{
+			fib[2]=fib[0]+fib[1];
+			fib[0]=fib[1];
+			fib[1]=fib[2];
+			//System.out.println(fib[2]);
+			cube=fib[2]*fib[2]*fib[2];
+			sum=sum+cube;
+			
+		}
+		//System.out.println("Sum= "+sum);
+
+	}
+
+}

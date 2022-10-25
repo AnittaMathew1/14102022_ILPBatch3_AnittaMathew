@@ -1,0 +1,166 @@
+package com.experion.utility;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import com.experion.entity.Customer;
+import com.experion.entity.Product;
+import com.experion.service.ProductServices;
+//import com.experion.service.Service;
+
+public class ProductUtility {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		int userChoice;
+		int choice;
+		int subChoice;
+		int i=0;
+		char mainChoice;
+		char c;
+		String ch;
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("**********SUPER MARKET**********");
+		ArrayList<Product>productList=new ArrayList<Product>();
+		ArrayList<Product>customerProductList=new ArrayList<Product>();
+		do {
+			System.out.println("1.Management\n2.Customer");
+			userChoice=scanner.nextInt();
+				if((i<=0)&&(userChoice==2))
+					{
+					System.out.println("No Stock Available");
+					}
+				else
+				{
+					switch(userChoice) 
+						{
+						case 1:		
+							System.out.println("MENU\n 1.Electronics\n 2.Fabrics");
+							System.out.println("Enter Choice =");
+							subChoice=scanner.nextInt();
+								switch(subChoice) 
+									{
+									case 1:
+									System.out.println("MENU\n 1.Add Stock\n 2.Display Stock");
+									System.out.println("Enter Choice =");
+									choice=scanner.nextInt();
+										switch(choice)
+											{
+											case 1:
+												productList.add(ProductServices.createProduct());
+												i++;
+												break;
+											case 2:
+												if(i<=0)
+										
+													System.out.println("No products Available");
+				
+												else
+											
+													ProductServices.displayProductDetails(productList);
+										
+												break;
+											}
+		
+									case 2:
+										System.out.println("MENU\n 1.Add Stock\n 2.Display Stock");
+										System.out.println("Enter Choice =");
+										subChoice=scanner.nextInt();
+										switch(choice)
+										{
+										case 1:
+											productList.add(ProductServices.createProduct());
+											i++;
+											break;
+										case 2:
+											if(i<=0)
+									
+												System.out.println("No products Available");
+			
+											else
+										
+												ProductServices.displayProductDetails(productList);
+									
+											break;
+										}
+									default:
+										System.out.println("Enter Valid Choice");
+									}
+	
+					case 2:	
+						do
+						{
+								System.out.println("MENU\n 1.Display Product\n 2.Buy Product\n 3.Existing Product Service");
+								System.out.println("Enter Choice =");
+								choice=scanner.nextInt();
+								switch(choice)
+								{
+								case 1:
+									ProductServices.displayProductDetails(productList);
+								//i++;
+								break;
+								case 2:
+									ProductServices.buyProduct(productList, customerProductList);
+								break;
+								case 3:
+									System.out.println("MENU\n 1.Display Product\n 2.Buy P\n 3.Existing Product Service");
+									System.out.println("Enter Choice =");
+									choice=scanner.nextInt();
+									switch(choice)
+									{
+									case 1:
+										ProductServices.displayProductDetails(productList);
+
+									case 2:
+										ProductServices.buyProduct(customerProductList,productList);
+		
+									case 3:
+									Customer customer = new Customer("CS001","Anitta",customerProductList);
+									System.out.println("MENU\n 1.Product Exchange\n 2.Product Repair\n3.Warranty Replacement");
+									System.out.println("Enter Choice =");
+									subChoice=scanner.nextInt();
+									switch(subChoice)
+									{
+									case 1:
+										ProductServices.productExchange(productList, customerProductList);
+										break;
+									case 2:
+										ProductServices.productRepair(productList, customerProductList);
+										break;
+									case 3:
+										ProductServices.warrentyExchange(productList);
+									}
+								}
+								}
+							
+								
+								
+								
+								
+								/*case 2:
+								System.out.println("MENU\n 1.Add Product\n 2.Display Stock");
+								System.out.println("Enter Choice =");
+								choice=scanner.nextInt();
+								switch(choice)
+								{
+								case 1:
+									productList.add(ProductServices.createProduct());
+									i++;
+									break;
+									case 2:
+										if(i<=0)
+										
+											System.out.println("No products Available");
+				
+										else
+											
+										ProductServices.displayProductDetails(productList);
+										
+										break;
+								}
+						}*/
+						//}while(ch=='y');
+				System.out.println("press yes if you want to continue");
+				ch =scanner.nextLine();
+				}while(ch=="yes");
+	}

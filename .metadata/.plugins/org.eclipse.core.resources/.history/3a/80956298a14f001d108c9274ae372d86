@@ -1,0 +1,18 @@
+package com.experion.service;
+
+import com.experion.entity.Account;
+
+public class AccountService {
+	
+	public void depositCash(Account account,double amount) {
+		
+	}
+public void depositCash(Account account,String chequeNo,double amount) {
+		
+	}
+public void depositCash(Account account,double amount,String upi) {
+	
+}
+	
+
+}

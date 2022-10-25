@@ -1,0 +1,24 @@
+package com.ilpexperion.BasicPrograming;
+
+import java.util.Scanner;
+
+public class DetailsScanner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(system.in);
+		System.out.println("**********Welcome to ILP Program**********");
+		
+		String name;
+		int age;
+		char gender;
+		double cgpa;
+		
+		System.out.println("Name\t\t\tAge\t\tGender\t\tCGPA");
+		System.out.println(name+"			"+age+"		"+gender+"		"+cgpa);
+		
+		
+
+	}
+
+}

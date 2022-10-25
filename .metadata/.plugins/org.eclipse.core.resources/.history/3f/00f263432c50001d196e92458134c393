@@ -1,0 +1,13 @@
+package com.experion.entity;
+
+public abstract class CardAccountServices extends  {
+	public void checkBalance() {
+		// TODO Auto-generated method stub
+		System.out.println("Balance checking initiated");
+	}
+	public void cashWithdrawal() {
+		// TODO Auto-generated method stub
+		System.out.println("Cash Withdrawal initiated");
+	}
+		
+	}

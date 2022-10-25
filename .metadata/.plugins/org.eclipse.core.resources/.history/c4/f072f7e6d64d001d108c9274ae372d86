@@ -1,0 +1,55 @@
+package com.experion.entity;
+
+import java.util.Scanner;
+
+	//public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		public class Product {
+			String productCode;
+			String productName;
+			String productDescription;
+			double productPrice;
+			String openDate;
+			String validityDate;
+			String expiryDate;
+			boolean active;
+			public void setProductCode(String productCode)
+			{
+				this.productCode=productCode;
+			}
+			public String getProductCode()
+			{
+				return this.productCode;
+			}
+			public void inputProductDetails() {
+				
+				Scanner scanner = new Scanner(System.in);
+				System.out.println("Enter Proudct Code - ");
+				productCode = scanner.nextLine();
+				System.out.println("Enter Product Name - ");
+				productName = scanner.nextLine();
+				System.out.println("Enter Product Description - ");
+				productDescription = scanner.nextLine();
+				System.out.println("Enter Product Valdity Date - ");
+				validityDate = scanner.nextLine();
+				System.out.println("Enter Product Open Date - ");
+				openDate = scanner.nextLine();
+				System.out.println("Enter Product Expiry Date - ");
+				expiryDate = scanner.nextLine();
+				System.out.println("Active (true or false) - ");
+				active = scanner.nextBoolean();
+				System.out.println("Enter Product Price - ");
+				productPrice = scanner.nextDouble();
+
+				}
+
+				public void displayProductDetails() {
+
+				System.out.println("Product Name " + "		" + "Product Description" + "		" + "Product Price"
+				+ "		" + "Open Date" + "		" + "Expiry Date");
+				System.out.println(productName + "			" + productDescription + "				" + productPrice
+				+ "			" + openDate + "			" + expiryDate);
+
+				}
+
+	}

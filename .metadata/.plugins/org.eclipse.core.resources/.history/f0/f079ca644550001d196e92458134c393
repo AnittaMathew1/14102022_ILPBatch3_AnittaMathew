@@ -1,0 +1,7 @@
+package com.experion.service;
+
+public interface FabricServices {
+	public void buyProduct();
+	public void existingProductService();
+
+}

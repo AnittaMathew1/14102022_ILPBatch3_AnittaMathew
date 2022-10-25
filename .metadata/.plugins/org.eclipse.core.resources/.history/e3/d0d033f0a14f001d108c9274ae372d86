@@ -1,0 +1,17 @@
+package com.experion.utility;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import com.experion.entity.Account;
+import com.experion.entity.Product;
+import com.experion.service.AccountService;
+
+public class ProductUtility {
+
+	public static void main(String[] arg)
+	{
+		Account account=new Account("WOMENS SAVING NUMBER","ACC100023",10000);
+	}
+}
+

@@ -1,0 +1,19 @@
+package com.experion.utility;
+
+import java.util.Scanner;
+
+import com.experion.entity.Product;
+	public class Productutility {
+
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			Scanner scanner = new Scanner(System.in);
+			Product product=new Product();
+			System.out.println("Enter the Product Code =");
+			String productCode=scanner.nextLine();
+			product.setProductCode(productCode);
+			System.out.println("Product Code ="+product.getProductCode);
+
+		}
+
+}

@@ -1,0 +1,62 @@
+package com.experion.entity;
+
+public class Product {
+	//private int serielNoOriginal;
+    private String productCode;
+    private String productName;
+    private String productDescription;
+    private double productPrice;
+    //private static int serielNo=0;
+	public Product(String productCode, String productName, String productDescription,
+			double productPrice,double productServiceCharge) {
+		super();
+		//this.serielNoOriginal = serielNoOriginal;
+		this.productCode = productCode;
+		this.productName = productName;
+		this.productDescription = productDescription;
+		this.productPrice = productPrice;
+	}						//constructors
+	
+	
+	
+	
+	/*public int getSerielNoOriginal() {
+		return serielNoOriginal;
+	}
+	public void setSerielNoOriginal(int serielNoOriginal) {
+		this.serielNoOriginal = serielNoOriginal;
+	}*/
+	public String getProductCode() {
+		return productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
+	}
+	public String getProductName() {
+		return productName;
+	}
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+	public String getProductDescription() {
+		return productDescription;
+	}
+	public void setProductDescription(String productDescription) {
+		this.productDescription = productDescription;
+	}
+	public double getProductPrice() {
+		return productPrice;
+	}
+	public void setProductPrice(double productPrice) {
+		this.productPrice = productPrice;
+	}
+	/*public static int getSerielNo() {
+		return serielNo;
+	}
+	public static void setSerielNo(int serielNo) {
+		Product.serielNo = serielNo;
+	}	*/				//getters&setters
+    
+    
+
+}

@@ -1,0 +1,33 @@
+package com.experion.utility;
+
+import java.security.Provider.Service;
+import java.util.Scanner;
+
+public class productUtility {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner=new Scanner(System.in);
+		int choice;
+		System.out.println("**********WELCOME TO HDFC BANK*********");
+		System.out.println("MENU\n1.Add Card\n2.Add Account\n3.Buy Product");
+		choice=scanner.nextInt();
+		
+		switch(choice) 
+		{
+			case 1:
+				productList.add(Service.createProduct());
+				i++;
+				break;
+			case 2:
+				if(i<=0)
+				{
+					System.out.println("No products Available");
+				}
+				else
+				Service.displayProductDetails(productList);
+				break;
+
+	}
+
+}

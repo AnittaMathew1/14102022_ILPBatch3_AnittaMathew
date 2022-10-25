@@ -1,0 +1,24 @@
+package com.ilpexperion.GroupAssignment;
+
+import java.util.Scanner;
+
+public class Descending3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		int number[];
+		number=new int[20];
+		for(int intiger=1;intiger<4;intiger++)
+			{
+			System.out.println("Enter Number"+intiger+"= ");
+			number[intiger]=scanner.nextInt();
+			}
+		for(int intiger=0;intiger<3;intiger++)
+		{
+		System.out.println("Enter Number"+intiger+"= "+number[intiger]);
+		}
+		
+	}
+
+}

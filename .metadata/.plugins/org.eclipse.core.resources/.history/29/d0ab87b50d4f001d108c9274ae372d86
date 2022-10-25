@@ -1,0 +1,31 @@
+package com.ilpexperion.GroupAssignment;
+import java.util.Scanner;
+public class SumofSeries4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		double number;
+		double sum=0;
+		double product=1;
+		double temp;
+		System.out.println("Enter the value of n");
+		number=scanner.nextInt();
+		
+		for(int integer=1;integer<=number;integer++)
+		{
+			product=1;
+			for(int integer1=1;integer1<=number;integer1++)
+				{
+				product=product*integer1;
+				}
+			temp=(double)integer/(double)product;
+			//System.out.println("Temp= "+temp);
+			sum=(double)sum+(double)temp;
+			//System.out.println("Sum= "+sum);
+		}
+		System.out.println("Sum= "+sum);
+
+	}
+
+}

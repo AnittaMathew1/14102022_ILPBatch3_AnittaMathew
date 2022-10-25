@@ -1,0 +1,33 @@
+package com.experion.entity;
+
+import java.util.ArrayList;
+
+public class Account extends Product {
+	private String accountType;
+	//private BankingServices bankingServices;
+	ArrayList<Product>bankingServices=new ArrayList<Product>();
+	public Account(String productCode, String productName, String productType, String accountType,
+			ArrayList<Product> bankingServices) {
+		super(productCode, productName, productType);
+		this.accountType = accountType;
+		this.bankingServices = bankingServices;
+	}
+	public String getAccountType() {
+		return accountType;
+	}
+	public void setAccountType(String accountType) {
+		this.accountType = accountType;
+	}
+	public ArrayList<Product> getBankingServices() {
+		return bankingServices;
+	}
+	public void setBankingServices(ArrayList<Product> bankingServices) {
+		this.bankingServices = bankingServices;
+	}
+
+
+
+
+	
+	}
+	

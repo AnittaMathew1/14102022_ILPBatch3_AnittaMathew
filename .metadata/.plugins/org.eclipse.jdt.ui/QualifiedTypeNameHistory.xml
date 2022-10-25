@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.experion.service.Service"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.experion.entity.BankingServices"/>
+    <fullyQualifiedTypeName name="com.experion.entity.Account"/>
+    <fullyQualifiedTypeName name="com.experion.entity.Card"/>
+</qualifiedTypeNameHistroy>

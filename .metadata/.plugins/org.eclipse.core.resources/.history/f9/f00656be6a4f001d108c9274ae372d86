@@ -1,0 +1,35 @@
+package com.experion.service;
+
+import java.util.ArrayList;
+
+import com.experion.entity.Account;
+import com.experion.entity.Card;
+import com.experion.entity.Product;
+
+public class Service {
+
+	public static Product addCard(String productType) {
+		// TODO Auto-generated method stub
+		Product product=null;
+		if(productType.compareTo("Cards")==0)
+		{
+			product=new Card("PRDMC100","Master Cards","Cards","Master");
+		}
+		
+		else if(productType.compareTo("Accounts")==0)
+		{
+			product=new Account("PRDWSA100","Women's Svings Account","Account","Womens Savings Account");
+		}
+
+		return product;
+		
+		
+	}
+
+	public static void buyProduct(ArrayList<Product> productList) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

@@ -1,0 +1,31 @@
+package com.experion.entity;
+
+//import java.util.ArrayList;
+
+public abstract class Card extends Product implements AccountCardServices {
+	private String cardNumber;
+	private double cardBalance;
+	
+	public Card(String productName, String cardNumber, double cardBalance) {
+		super(productName);
+		this.cardNumber = cardNumber;
+		this.cardBalance = cardBalance;
+	}
+	public String getCardNumber() {
+		return cardNumber;
+	}
+	public void setCardNumber(String cardNumber) {
+		this.cardNumber = cardNumber;
+	}
+	public double getCardBalance() {
+		return cardBalance;
+	}
+	
+	public void checkBalance(double cardBalance) {
+		this.cardBalance = cardBalance;
+	}
+
+	
+	
+	}
+	

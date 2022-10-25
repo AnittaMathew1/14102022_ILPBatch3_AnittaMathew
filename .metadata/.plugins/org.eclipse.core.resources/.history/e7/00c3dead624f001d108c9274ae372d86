@@ -1,0 +1,13 @@
+package com.experion.entity;
+
+public class Account extends Product {
+	private String accountType;
+
+	public Account(String productCode, String productName, String productDescription, double productPrice,
+			String openDate, String validityDate, String expiryDate, boolean active, String accountType) {
+		super(productCode, productName, productDescription, productPrice, openDate, validityDate, expiryDate, active);
+		this.accountType = accountType;
+	}
+	
+
+}

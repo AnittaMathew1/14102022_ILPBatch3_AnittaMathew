@@ -1,0 +1,21 @@
+package com.ilpexperion.BasicPrograming;
+
+public class Productutility {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String productCode;
+		String productName;
+		String productDescription;
+		double productPrice;
+		String openDate;
+		String validityDate;
+		String expiryDate;
+		boolean active;
+		Product product=new Product();
+		product.inputProductDetails();
+		product.displayProductDetails();
+
+	}
+
+}

@@ -1,0 +1,45 @@
+package com.experion.entity;
+
+import java.util.ArrayList;
+import java.util.Date;
+
+public class Electronics extends Product {
+	//private String validityDate;
+	private Date validityDate = new Date();
+    private Date warrentyDate= new Date();
+    ArrayList<ProductServices>productServices=new ArrayList<ProductServices>();
+    
+    //constructor
+	public Electronics(int serielNoOriginal, String productCode, String productName, String productDescription,
+			double productPrice, Date validityDate, Date warrentyDate, ArrayList<ProductServices> productServices) {
+		super(serielNoOriginal, productCode, productName, productDescription, productPrice);
+		this.validityDate = validityDate;
+		this.warrentyDate = warrentyDate;
+		this.productServices = productServices;
+	}
+	
+	
+	//getters and setters
+	public Date getValidityDate() {
+		return validityDate;
+	}
+	public void setValidityDate(Date validityDate) {
+		this.validityDate = validityDate;
+	}
+	public Date getWarrentyDate() {
+		return warrentyDate;
+	}
+	public void setWarrentyDate(Date warrentyDate) {
+		this.warrentyDate = warrentyDate;
+	}
+	public ArrayList<ProductServices> getProductServices() {
+		return productServices;
+	}
+	public void setProductServices(ArrayList<ProductServices> productServices) {
+		this.productServices = productServices;
+	}
+	
+    
+    
+
+}

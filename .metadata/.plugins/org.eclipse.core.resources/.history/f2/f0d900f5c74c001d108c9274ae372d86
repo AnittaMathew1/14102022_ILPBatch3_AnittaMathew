@@ -1,0 +1,43 @@
+package com.ilpexperion.GroupAssignment;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Descending3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		int number[];
+		number=new int[10];
+		int temp;
+		for(int intiger=1;intiger<4;intiger++)
+			{
+			System.out.println("Enter Number"+intiger+"= ");
+			number[intiger]=scanner.nextInt();
+			}
+		for(int intiger=1;intiger<4;intiger++)
+		{
+			for(int intiger1=intiger+1;intiger1<4;intiger1++)
+			{
+				if(number[intiger]<number[intiger1])
+				{
+					temp=number[intiger];
+					number[intiger]=number[intiger1];
+					number[intiger1]=temp;
+				}
+				else
+				{
+					continue;
+				}
+			}
+		}
+		/*Arrays.sort(number);
+		for(int intiger=1;intiger<4;intiger++)
+		{
+		System.out.println(number[intiger]);
+		}*/
+		
+	}
+
+}
